@@ -1,15 +1,10 @@
+import SideBar from "./SideBar";
 
 
 const DashboardLayout = ({ children }) => {
     return (
-        <div>
-            <nav>
-                <a href="/dashboard/profile">Profile</a>
-                <a href="/">Home</a>
-            </nav>
-            <div>
-                <p>Sidebar</p>
-            </div>
+        <div className="container mx-auto flex gap-10">
+            <SideBar></SideBar>
             {children}
         </div>
     );

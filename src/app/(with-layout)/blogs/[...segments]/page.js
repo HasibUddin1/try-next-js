@@ -1,9 +1,12 @@
 import React from 'react';
 
 const SingleBlog = ({params}) => {
+
+    const [year, id] = params.segments || []
+
     return (
         <div>
-            <h1>This is Single Blog Component {params.id}</h1>
+            <h1>Blog in {year || new Date().getFullYear()} for {id}</h1>
         </div>
     );
 };
