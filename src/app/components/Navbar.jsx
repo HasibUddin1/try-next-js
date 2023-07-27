@@ -30,9 +30,9 @@ const Navbar = () => {
                 <h1 className="text-3xl font-bold">Next Hero</h1>
             </div>
             <div>
-                <ul className="flex gap-5 font-semibold">
+                <ul className="flex font-semibold">
                     {navLinks.map(SingleLink => <li key={SingleLink.path}>
-                        <Link href={SingleLink.path}>{SingleLink.title}</Link>
+                        <Link className="hover:bg-slate-400 ease-in-out duration-200 px-4 py-2 rounded-lg" href={SingleLink.path}>{SingleLink.title}</Link>
                     </li>)}
                 </ul>
             </div>
