@@ -27,8 +27,9 @@ const SideBar = () => {
             <ul className="font-semibold">
                 {navLinks.map(SingleLink => <li
                     key={SingleLink.path}
+                    className="hover:bg-slate-400 ease-in-out duration-200 px-4 py-2 rounded-lg"
                 >
-                    <NavLink exact={SingleLink.path == '/'} activeClassName="bg-slate-400" href={SingleLink.path}>{SingleLink.title}</NavLink>
+                    <NavLink exact activeClassName="bg-slate-400 px-4 py-2 rounded-lg" href={SingleLink.path}>{SingleLink.title}</NavLink>
                 </li>)}
             </ul>
         </aside>
