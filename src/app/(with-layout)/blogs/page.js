@@ -30,7 +30,9 @@ export const metadata = {
 
 const BlogsPage = async () => {
 
-    const res = await fetch('https://jsonplaceholder.typicode.com/posts')
+    const res = await fetch('https://jsonplaceholder.typicode.com/posts', {
+        cache: 'force-cache'
+    })
     const blogs = await res.json()
 
     return (
